@@ -66,6 +66,15 @@ his business.This is all I can say at the moment.
   
 -------
 
+## Code example:
+
+  methods:{
+            sendMessage(){
+                    console.log(this.email,this.message)
+            }
+
+-------
+
 ## Experience:
 
 As for experience, during this time I have written 2 online shops, dice, code that converts numbers into verbal format.
