@@ -1,5 +1,5 @@
 
-# rsschool-cv
+# RSSCHOOL-CV
 
 # Asmati Metreveli
 
