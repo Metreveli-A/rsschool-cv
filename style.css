@@ -113,7 +113,12 @@ body{
 .menu-Item a{
     text-decoration: none;
     color: #f3eded;
+  
 }
+ol li{
+    list-style: none!important;
+}
+
 .menu-Item a:hover{
  color: rgb(80, 162, 194);
 }
