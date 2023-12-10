@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./menu.css">
+   <script src="./index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <!-- header's  child 1  container -->
+         <div class="container">
+            <div class="header-menu">
+                 <img class="logo" id="homeclick" alt="logo" href="#home" src="./header-menu-img/logo.png"/>
+                 <!-- <img class="button-icon-burger" alt="button-burger" src="./header-menu/button-icon-burger.jpg"/> -->
+                 <nav class="nav-bar">
+                      <ul>
+                        <li class="favorite-coffee-nav"><a href="#favorite-coffee">Favorite coffee</a></li>
+                        <li class="about-nav"><a href="#about">About</a></li>
+                        <li class="mobile-app-nav"><a href="#mobile-app">Mobile app</a></li>
+                        <li class="contact-us-nav"><a href="#contact">Contact us</a></li>
+                      </ul>
+                 </nav>
+                 <div class="coffee-menu" id="oncklick">
+                      <ul>
+                        <li class="menu-item"><button type="menu">Menu</button><img class="coffee-cup-menu" alt="coffee-cup-menu" src="./nav-jpg/coffee-cup.png"/>
+                        </li>
+                      </ul>
+                 </div>
+            </div>
+         </div>
+    </div>
+    <div class="menu-section">
+        <div class="menu-container">
+            <div class="menu-ofer">
+                <img src="./menu-header-essential/Behind each of our cups hides an amazing surprise.png" class="menu-text" alt="menu-name"/>
+                <div class="tabs">
+                  <button class="tab-item" id="item">
+                    <img src="./menu-header-essential/icon (1).png" alt="coffee-cup"/>
+                    <img src="./menu-header-essential/Coffee.png" alt="coffee-text"/>
+                  </button>
+                  <button class="tab-item" id="item1">
+                    <img src="./menu-header-essential/icon (2).png" alt="tea-cup"/>
+                    <img src="./menu-header-essential/Coffee (1).png" alt="tea-text"/>
+                  </button>
+                  <button class="tab-item" id="item2">
+                    <img src="./menu-header-essential/icon (3).png" alt="desert-cup"/>
+                    <img src="./menu-header-essential/Coffee (2).png" alt="desert-text"/>
+                   
+                  </button>
+                </div>
+            </div>
+            <div class="menu-grid">
+                <img class="coffee-grid" src="./tea-img/preview (8).png" alt="coffee-grid" />
+                <img class="coffee-grid" src="./tea-img/preview (9).png" alt="coffee-grid" />
+                <img class="coffee-grid" src="./tea-img/preview (10).png" alt="coffee-grid" />
+                <img class="coffee-grid" src="./tea-img/preview (11).png" alt="coffee-grid" />
+              
+            </div>
+        </div>
+    </div>
+    <section id="contact">
+      <div class="contact">
+           <div class="container-contact">
+              <div class="ofer-contact">
+                  <img src="./contact-img/Sip, Savor, Smile. It’s coffee time!.png" class="ofer-contact-text" alt="contact-imgg"/>
+                  <div class="social-icons">
+                      <button ><img class="twiter-icon" src="./contact-img/button-icon-light.png" alt="twiter-icon"/></button>
+                      <button><img class="twiter-icon" src="./contact-img/button-icon-light (1).png" alt="instagram-icon"/></button>
+                      <button><img class="twiter-icon" src="./contact-img/button-icon-light (2).png" alt="facebook-icon"/></button>
+                  </div>
+              </div>
+              <div class="contact-info">
+                 <div class="contact-us">
+                  <img class="contact-us-text" src="./contact-img/Contact us.png"/>
+                 </div>
+                 <div class="contact-contact">
+                  <div>
+                      <img class="location-link" src="./contact-img/link-item.png" alt="location-link"/>
+                  </div>
+                  <div>
+                  <img class="phone-link" src="./contact-img/link-item (1).png" alt="phone-link"/>
+                 </div>
+                  <div>
+                      <img class="item-link" src="./contact-img/link-item (2).png" alt="phone-link"/>
+                  </div>
+                 </div>
+              </div>
+           </div>
+      </div>
+  </section>
+  
+         <script>
+            const myclick = document.getElementById('oncklick');
+            myclick.addEventListener('click', function(){
+            window.location.href = 'menu.html';
+          });
+          const homeclick = document.getElementById('homeclick');
+          homeclick.addEventListener('click', function(){
+            window.location.href = 'home.html';
+            
+          });
+
+
+ 
+           const item = document.getElementById('item');
+item.addEventListener('mouseenter', function() {
+  if (!item.classList.contains('clicked')) {
+    item.classList.add('hovered');
+  }
+});
+item.addEventListener('mouseleave', function() {
+  item.classList.remove('hovered');
+});
+item.addEventListener('click', function() {
+  item.classList.toggle('clicked');
+  window.location.href = 'coffee.html'; 
+});
+
+const item1 = document.getElementById('item1');
+item1.addEventListener('mouseenter', function() {
+  if (!item1.classList.contains('clicked')) {
+    item1.classList.add('hovered');
+  }
+});
+item1.addEventListener('mouseleave', function() {
+  item1.classList.remove('hovered');
+});
+item1.addEventListener('click', function() {
+  item1.classList.toggle('clicked');
+  window.location.href = 'tea.html'; 
+});
+const item2 = document.getElementById('item2');
+item2.addEventListener('mouseenter', function() {
+  if (!item1.classList.contains('clicked')) {
+    item2.classList.add('hovered');
+  }
+});
+item2.addEventListener('mouseleave', function() {
+  item2.classList.remove('hovered');
+});
+item2.addEventListener('click', function() {
+  item2.classList.toggle('clicked');
+  window.location.href = 'desert.html'; 
+});
+</script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
